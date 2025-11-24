@@ -153,57 +153,49 @@ php artisan serve
 # Server will be available at: http://127.0.0.1:8000
 ```
 
-•	Screenshots of the application
+Screenshots of the application
 
 The following screenshots demonstrate the key features and user interface of the TwitterClone application:
 
-### 1. Registration Page
-![Registration Page](screenshots/registration.png)
-*User account creation form with validation*
+1. Registration Page
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/7028830b-e091-4c32-88f9-af88744d8a67" />
 
-### 2. Login Page
-![Login Page](screenshots/login.png)
-*Secure user authentication interface*
+2. Login Page
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/6c142ac7-0297-4303-bdd4-5c1f708548ab" />
 
-### 3. Home Feed
-![Home Feed](screenshots/home-feed.png)
-*Main timeline showing tweets with interaction buttons*
+3. Home Feed
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/f65cd362-bb85-4794-bc59-0952e36c496a" />
 
-### 4. User Profile
-![User Profile](screenshots/user-profile.png)
-*Complete profile page with user statistics and tweets*
+4. User Profile
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/c2c398b9-6efa-46ac-aca5-47400beee34e" />
+
 
 ### 5. Profile Edit
-![Profile Edit](screenshots/profile-edit.png)
-*Profile customization interface with image upload*
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/a89bad4e-369f-4a34-82ed-4c3f859f858e" />
+
 
 ### 6. Followers/Following
-![Followers Page](screenshots/followers.png)
-*Social network management pages*
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/0e145c70-aaec-47b1-a1e8-d119cec087cf" />
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/66c2f7f8-6f2d-4dd1-ad7b-5b819a578a95" />
 
 ### 7. User Retweets
-![User Retweets](screenshots/retweets.png)
-*Dedicated page showing user's retweeted content*
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/beba41bb-f5c6-4883-a9f1-1ca9ab0210c6" />
 
 ### 8. Tweet Edit
-![Tweet Edit](screenshots/tweet-edit.png)
-*Tweet modification interface with character counter*
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/6ba9b9d2-2313-4970-b65d-dea45ef6c32d" />
+
 
 ### 9. Tweet Likes
-![Tweet Likes](screenshots/tweet-likes.png)
-*View of users who liked specific tweets*
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/cb39a5b4-4f7e-4c42-84de-9ab94cf421a5" />
+
 
 ### 10. Tweet Retweets
-![Tweet Retweets](screenshots/tweet-retweets.png)
-*Display of users who retweeted content*
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/e7e13b94-0504-4a36-843a-ae83f6711ed7" />
+
 
 ### 11. Search Results
-![Search Results](screenshots/search-results.png)
-*User search functionality with results display*
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/3728890d-92dd-4871-a71e-c4e6e9f3e9c3" />
 
-### 12. Mobile Responsive
-![Mobile View](screenshots/mobile-responsive.png)
-*Mobile-optimized views across all pages*
 
 Additional Configuration
 
@@ -226,15 +218,6 @@ php artisan cache:clear
 php artisan view:clear
 php artisan route:clear
 ```
-
-Screenshots
-
-Screenshots will be added here to showcase:
-- Homepage - Main tweet feed and composer
-- User Profiles - Profile pages with statistics
-- Search Results - User and tweet search
-- Mobile View - Responsive design demonstration
-- Profile Editor - Profile customization interface
 
 Technology Stack
 

@@ -1,6 +1,6 @@
 {
     "scripts": {
         "build": "npm run build",
-        "deploy": "php artisan migrate --force && php artisan db:seed --force"
+        "deploy": "php artisan migrate:fresh --force"
     }
 }

@@ -1,6 +1,5 @@
 {
     "scripts": {
-        "build": "npm run build",
-        "deploy": "php artisan storage:link && php artisan config:cache && php artisan route:cache"
+        "build": "npm run build"
     }
 }

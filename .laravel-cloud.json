@@ -1,6 +1,5 @@
 {
     "scripts": {
-        "build": "npm run build",
-        "deploy": "php artisan migrate --force"
+        "build": "npm run build"
     }
 }

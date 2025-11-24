@@ -2,6 +2,12 @@ TwitterClone - A Full-Featured Social Media Platform
 
 A modern, feature-rich social media platform built with Laravel and Tailwind CSS, providing a Twitter-like experience with comprehensive social networking functionality.
 
+## 🚀 Live Demo
+
+**[View Live Application](https://ramos-midterm-exam-main-x9ft04.laravel.cloud/)**
+
+*Try registering a new account or exploring the features!*
+
 Project Description and Purpose
 
 TwitterClone is a complete social media application that replicates the core functionality of Twitter while adding additional features for enhanced user interaction. The project demonstrates full-stack web development capabilities using modern PHP frameworks and responsive design principles.

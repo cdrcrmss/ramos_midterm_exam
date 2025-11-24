@@ -1,5 +1,6 @@
 {
     "scripts": {
-        "build": "npm run build"
+        "build": "npm run build",
+        "deploy": "touch database/database.sqlite && php artisan migrate --force"
     }
 }

@@ -10,10 +10,14 @@
             <form action="{{ route('tweets.store') }}" method="POST">
                 @csrf
                 <div class="flex space-x-4">
-                    @if(auth()->user()->profile_picture)
+                    @if(auth()->user()->profile_picture_url)
                         <img class="w-12 h-12 rounded-full object-cover border-2 border-gray-200 flex-shrink-0" 
                              src="{{ auth()->user()->profile_picture_url }}" 
-                             alt="{{ auth()->user()->display_name }}">
+                             alt="{{ auth()->user()->display_name }}"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0" style="display:none;">
+                            {{ auth()->user()->initials }}
+                        </div>
                     @else
                         <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
                             {{ auth()->user()->initials }}
@@ -84,10 +88,14 @@
         @forelse($tweets as $tweet)
             <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 hover:shadow-md transition-all duration-200">
                 <div class="flex items-start space-x-4">
-                    @if($tweet->user->profile_picture)
+                    @if($tweet->user->profile_picture_url)
                         <img class="w-12 h-12 rounded-full object-cover border-2 border-gray-200 flex-shrink-0" 
                              src="{{ $tweet->user->profile_picture_url }}" 
-                             alt="{{ $tweet->user->display_name }}">
+                             alt="{{ $tweet->user->display_name }}"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0" style="display:none;">
+                            {{ $tweet->user->initials }}
+                        </div>
                     @else
                         <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
                             {{ $tweet->user->initials }}

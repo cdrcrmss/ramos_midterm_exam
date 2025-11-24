@@ -19,9 +19,9 @@
     <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6">
         <div class="flex items-start justify-between">
             <div class="flex items-start space-x-4">
-                @if($user->profile_picture)
+                @if($user->profile_picture_url)
                     <img class="w-20 h-20 rounded-full object-cover border-4 border-blue-500" 
-                         src="{{ asset('storage/' . $user->profile_picture) }}?v={{ $user->updated_at->timestamp }}" 
+                         src="{{ $user->profile_picture_url }}" 
                          alt="{{ $user->display_name }}"
                          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold" style="display:none;">
@@ -134,9 +134,9 @@
         @forelse($tweets as $tweet)
             <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
                 <div class="flex items-start space-x-3">
-                    @if($user->profile_picture)
+                    @if($user->profile_picture_url)
                         <img class="w-12 h-12 rounded-full object-cover" 
-                             src="{{ asset('storage/' . $user->profile_picture) }}?v={{ $user->updated_at->timestamp }}" 
+                             src="{{ $user->profile_picture_url }}" 
                              alt="{{ $user->display_name }}"
                              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                         <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold" style="display:none;">

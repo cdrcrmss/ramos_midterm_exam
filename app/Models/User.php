@@ -160,17 +160,15 @@ class User extends Authenticatable
     /**
      * Get the profile picture URL or return default.
      */
-    public function getProfilePictureUrlAttribute(): string
+    public function getProfilePictureUrlAttribute(): ?string
     {
         if ($this->profile_picture) {
-            $filePath = storage_path('app/public/' . $this->profile_picture);
-            if (file_exists($filePath)) {
-                return asset('storage/' . $this->profile_picture) . '?v=' . $this->updated_at->timestamp;
-            }
+            // Generate URL with cache busting
+            return asset('storage/' . $this->profile_picture) . '?v=' . $this->updated_at->timestamp;
         }
         
-        // Return a default avatar instead of Gravatar
-        return $this->getDefaultAvatarUrl();
+        // Return null to show placeholder
+        return null;
     }
 
     /**

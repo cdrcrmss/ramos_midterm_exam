@@ -17,11 +17,16 @@
                     <label class="block text-sm font-medium text-gray-700 mb-3">Profile Picture</label>
                     <div class="flex items-center space-x-6">
                         <div class="flex-shrink-0">
-                            @if($user->profile_picture)
+                            @if($user->profile_picture_url)
                                 <img class="w-20 h-20 rounded-full object-cover border-4 border-gray-200" 
                                      src="{{ $user->profile_picture_url }}" 
                                      alt="{{ $user->display_name }}"
-                                     id="current-profile-picture">
+                                     id="current-profile-picture"
+                                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold border-4 border-gray-200"
+                                     id="profile-placeholder" style="display:none;">
+                                    {{ $user->initials }}
+                                </div>
                             @else
                                 <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center text-white text-2xl font-bold border-4 border-gray-200"
                                      id="profile-placeholder">
